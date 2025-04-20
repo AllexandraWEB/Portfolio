@@ -1,9 +1,10 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useMediaQuery } from 'react-responsive';
-import { LotusHero } from './LotusHero';
 import HeroLights from './HeroLights';
-// import { Room } from './Room';
+import RotatingLotus from './RotatingLotus';
+// import { LotusHero } from './LotusHero';
+
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: 'max-width: 1024px'});
@@ -24,11 +25,10 @@ const HeroExperience = () => {
         <HeroLights />
         
         <group 
-        scale={ isMobile? 0.7 : 4.8}
-        position={[ 0, -3.8, 0 ]}
+        scale={ isMobile? 0.7 : 3.4} // 4.8 or 2.8
+        position={[ 0, -1, 0 ]} //3.8
         rotation={[ 0, -Math.PI /4, 0 ]}>
-        <LotusHero />
-        {/* <Room /> */}
+        <RotatingLotus  />
         </group>
     </Canvas>
   )
