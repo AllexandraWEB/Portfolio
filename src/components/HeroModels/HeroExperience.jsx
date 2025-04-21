@@ -25,11 +25,12 @@ const HeroExperience = () => {
         <HeroLights />
         
         <group 
-        scale={ isMobile? 0.7 : 3.4} // 4.8 or 2.8
+        scale={ isMobile ? 0.7 : 3.4} // 4.8 or 2.8
         position={[ 0, -1, 0 ]} //3.8
         rotation={[ 0, -Math.PI /4, 0 ]}>
         <RotatingLotus  />
         </group>
+        
     </Canvas>
   )
 }

@@ -8,7 +8,7 @@ export function LotusHero(props) {
   const whiteMetallicMaterial = new MeshStandardMaterial({
     color: 'white',
     metalness: 0.9, // very metallic 0.9
-    roughness: 0.4, // shiny/smooth surface 0.2
+    roughness: 0.3, // shiny/smooth surface 0.2 or 0.4
   })
 
   return (

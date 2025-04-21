@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -9,7 +10,7 @@ html,
 body {
   width: 100dvw;
   overflow-x: hidden;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: black;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
@@ -22,6 +23,15 @@ section {
 @theme {
   --font-sans: "Mona Sans", sans-serif;
   --font-main: "Bigilla", sans-serif;
+  --font-gallery: "Gallery Modern", sans-serif;
+  --font-ethereal: "Ethereal", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --color-purple-light: #7c5386;
+  --color-purple-mid: #493d7f;
+  --color-purple-dark: #130a23;
+  --color-yellow-light: #a1847e;
+  --color-yellow-dark: #664c45;
+  --color-pink-dark: #8e5a7b;
   --color-white-50: #d9ecff;
   --color-black-50: #1c1c21;
   --color-black-100: #0e0e10;
@@ -33,6 +43,20 @@ section {
 @font-face {
   font-family: 'Bigilla';
   src: url('/Bigilla.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gallery Modern';
+  src: url('/GalleryModern.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ethereal';
+  src: url('/Ethereal-Thin.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
