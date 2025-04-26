@@ -12,6 +12,28 @@ const ShowcaseSection = () => {
   const project3Ref = useRef(null);
 
   useGSAP(() => {
+    const projects = [project1Ref.current, project2Ref.current, project3Ref.current];
+
+    projects.forEach((card, index) => {
+      gsap.fromTo(
+        card,
+        {
+          y: 50,
+          opacity: 0
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.3 * ( index + 1 ),
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom-=100"
+          }
+        }
+      )
+    });
+
     gsap.fromTo(
       sectionRef.current, 
       { opacity: 0 }, 
@@ -25,12 +47,12 @@ const ShowcaseSection = () => {
           {/*LEFT*/}
           <div  className='first-project-wrapper' ref={project1Ref}>
             <div className='image-wrapper'>
-              <img src="/images/project-one.png" alt="Ryde" />
+              <img src="/images/Project_3_with_Lotus.png" alt="Ryde" />
             </div>
             <div className='text-content'>
-              <h2>On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde</h2>
+              <h2>Fairy Forest Parallax — Enchanting Web Scroll Animation</h2>
               <p className='text-black md:text-xl'>
-                An app built with React Native
+              A smooth and magical parallax scrolling experience of a fairy forest, powered by GSAP animations and clean web technologies.
               </p>
             </div>
           </div>
@@ -38,15 +60,15 @@ const ShowcaseSection = () => {
           <div className='project-list-wrapper overflow-hidden'>
               <div  className='project' ref={project2Ref}>
                 <div className='image-wrapper bg-purple-dark'>
-                  <img src="/images/project2.png" alt="#" />
+                  <img src="/images/project-one.png" alt="#" />
                 </div>
-                <h2>Library Management Platform</h2>
+                <h2>Headset Project — Modern Product Landing Page</h2>
               </div>
               <div className='project' ref={project3Ref}>
                 <div className='image-wrapper bg-purple-light'>
-                  <img src="/images/project3.png" alt="#" />
+                  <img src="/images/Project_2_Bigger.png" alt="#" />
                 </div>
-                <h2>Library Management Platform</h2>
+                <h2>Roooby — Training Project</h2>
               </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ const Hero = () => {
                         <h1>into Real Projects</h1>
                         <h1>that Deliver Results</h1>
                     </div>
-                        <p className='md:text-xl relative z-10 pointer-events-none'>Hi! I'm Aleksandra, passionate Web Developer</p>
+                        <p className='md:text-xl relative z-10 pointer-events-none'>Hi! I'm Alexandra, passionate Web Developer</p>
                         <Button 
                         className="md:w-80 md:h-16 w-60 h-12"
                         id="button"
