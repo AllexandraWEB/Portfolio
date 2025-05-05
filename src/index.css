@@ -26,6 +26,7 @@ section {
   --font-gallery: "Gallery Modern", sans-serif;
   --font-ethereal: "Ethereal", sans-serif;
   --font-poppins: "Poppins", sans-serif;
+  --color-soft-black: #0c0c0c;
   --color-purple-light: #7c5386;
   --color-purple-mid: #493d7f;
   --color-purple-dark: #130a23;
@@ -81,6 +82,10 @@ section {
 
   .section-padding {
     @apply px-5 md:px-10 md:mt-40 mt-20;
+  }
+
+  .section-only-padding {
+    @apply px-5 md:px-10;
   }
 
   .mt-responsive {
@@ -259,7 +264,16 @@ section {
       img {
         @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
+
     }
+  }
+  
+  .contact-button {
+    @apply px-4 py-4 md:mt-[70px] mt-[50px] flex justify-center items-center m-auto relative cursor-pointer overflow-hidden rounded-4xl bg-[#0c0c0c] border-2 border-white;
+  }
+
+  .text-button {
+    @apply uppercase text-[13px];
   }
 
   .card-border {
@@ -350,6 +364,17 @@ section {
       img {
         @apply inline-block;
       }
+    }
+  }
+  .footer-text {
+    @apply flex flex-col justify-center text-center font-main m-auto md:text-[96px] text-[35px] uppercase pointer-events-none md:leading-[80px] leading-[35px] tracking-[-1px];
+
+    .span {
+      @apply uppercase text-[13px] font-poppins tracking-wide lg:mb-[50px] md:mb-[50px] mb-[55px] md:mt-[10px] mt-[100px];
+    }
+
+    .italic {
+      @apply italic lowercase font-ethereal lg:px-5 md:px-5 px-2;
     }
   }
 }
