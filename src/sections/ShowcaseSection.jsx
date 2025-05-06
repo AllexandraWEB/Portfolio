@@ -47,7 +47,7 @@ const ShowcaseSection = () => {
           {/*LEFT*/}
           <div  className='first-project-wrapper' ref={project1Ref}>
             <div className='image-wrapper'>
-              <img src="/images/Project_3_with_Lotus.png" alt="Ryde" />
+              <img src="/images/project-one.png" alt="Ryde" />
             </div>
             <div className='text-content'>
               <h2>Fairy Forest Parallax — Enchanting Web Scroll Animation</h2>
@@ -59,13 +59,13 @@ const ShowcaseSection = () => {
           {/*RIGHT*/}
           <div className='project-list-wrapper overflow-hidden'>
               <div  className='project' ref={project2Ref}>
-                <div className='image-wrapper bg-purple-dark'>
-                  <img src="/images/project-one.png" alt="#" />
+                <div>
+                  <img src="/images/third-project.png" alt="#" />
                 </div>
                 <h2>Headset Project — Modern Product Landing Page</h2>
               </div>
               <div className='project' ref={project3Ref}>
-                <div className='image-wrapper bg-purple-light'>
+                <div>
                   <img src="/images/Project_2_Bigger.png" alt="#" />
                 </div>
                 <h2>Roooby — Training Project</h2>

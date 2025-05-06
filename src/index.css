@@ -118,7 +118,15 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[60vh] flex xl:items-center items-start justify-center;
+
+    .hero-header-text {
+      @apply lg:text-[196px] md:text-[120px] text-[60px] font-gallery uppercase font-light absolute lg:top-[10%] md:top-[10%] top-[10%];
+    }
+  }
+
+  .hero-arrow {
+    @apply text-center absolute lg:bottom-[20%] md:bottom-[20%] bottom-[5%];
   }
 
   .hero-text {
@@ -131,8 +139,8 @@ section {
     }
   }
 
-  .hero-badge {
-    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+  .hero-career-text {
+    @apply uppercase text-[13px] font-poppins tracking-wide lg:mb-[50px] md:mb-[50px] mb-[55px] md:mt-[10px] mt-[100px];
   }
 
   .hero-3d-layout {
@@ -217,7 +225,7 @@ section {
         }
 
         h2 {
-          @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+          @apply text-2xl md:text-3xl lg:text-4xl font-medium;
         }
       }
     }
@@ -289,7 +297,7 @@ section {
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-[#0c0c0c];
   }
 
   .timeline-logo {
@@ -377,6 +385,10 @@ section {
       @apply italic lowercase font-ethereal lg:px-5 md:px-5 px-2;
     }
   }
+}
+
+.dark-background {
+  @apply bg-[#0c0c0c] text-white;
 }
 
 /* Hero text slider starts */

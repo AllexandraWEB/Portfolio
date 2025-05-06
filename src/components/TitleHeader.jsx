@@ -3,10 +3,10 @@ import React from 'react'
 const TitleHeader = ( { title, sub } ) => {
   return (
     <div className='flex flex-col items-center gap-5'>
-        <div className='hero-badge'>
+        <div className='hero-career-text'>
             <p>{sub}</p>
         </div>
-        <div className='font-semibold md:text-5xl text-3xl text-center'>
+        <div className='text-center font-poppins uppercase md:text-[96px] text-[45px] font-thin'>
             {title}
         </div>
     </div>
