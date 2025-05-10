@@ -22,7 +22,7 @@ section {
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;
-  --font-main: "Bigilla", sans-serif;
+  --font-main: "Le Grand Regular", sans-serif; 
   --font-gallery: "Gallery Modern", sans-serif;
   --font-ethereal: "Ethereal", sans-serif;
   --font-poppins: "Poppins", sans-serif;
@@ -58,6 +58,36 @@ section {
 @font-face {
   font-family: 'Ethereal';
   src: url('/Ethereal-Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Allegra de Amour';
+  src: url('/Allegra-de-Amour.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Edensor';
+  src: url('/Edensor.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Italiana Regular';
+  src: url('/Italiana-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Le Grand Regular';
+  src: url('/Le-Grand-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Soage';
+  src: url('/Soage.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -130,7 +160,7 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[80px] text-[40px] relative z-10 pointer-events-none md:leading-[80px] leading-[35px] tracking-[-1px];
+    @apply flex flex-col justify-center md:text-[80px] text-[40px] relative z-10 pointer-events-none md:leading-[80px] leading-[40px] tracking-[-1px];
     img {
       @apply size-8 md:size-10 object-contain;
     }
@@ -200,7 +230,7 @@ section {
   }
 
   .text-showcase {
-    @apply flex flex-col justify-center text-start font-main m-auto lg:text-[96px] md:text-[96px] text-[35px] uppercase pointer-events-none md:leading-[80px] leading-[35px] tracking-[-1px] md:pb-10 pb-5;
+    @apply flex flex-col justify-center text-start font-main m-auto lg:text-[96px] md:text-[96px] text-[48px] uppercase pointer-events-none md:leading-[80px] leading-[40px] tracking-[-1px] md:pb-10 pb-5;
   }
 
   .app-showcase {
@@ -380,7 +410,7 @@ section {
     }
   }
   .footer-text {
-    @apply flex flex-col justify-center text-center font-main m-auto md:text-[96px] text-[35px] uppercase pointer-events-none md:leading-[80px] leading-[35px] tracking-[-1px];
+    @apply flex flex-col justify-center text-center font-main m-auto lg:text-[96px] md:text-[70px] text-[48px] uppercase pointer-events-none md:leading-[80px] leading-[45px] md:tracking-[-1px] tracking-[2px];
 
     .span {
       @apply uppercase text-[13px] font-poppins tracking-wide lg:mb-[50px] md:mb-[50px] mb-[55px] md:mt-[10px] mt-[100px];

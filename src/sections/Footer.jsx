@@ -27,10 +27,11 @@ const Footer = () => {
       <div className="w-full h-full md:px-20 px-5 xl:pt-40 md:pt-25 pt-25 pb-20">
         <div className="flex-col-center footer-text">
           <span className="span">Are you interested?</span>
-          <h1>
+          <div>
+
+          </div>
             Let's create <br /> great things
             <span className="italic">together.</span>
-          </h1>
         </div>
         <ContactButton text="Contact me" />
       </div>
