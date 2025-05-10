@@ -148,7 +148,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[60vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[75vh] flex xl:items-center items-start justify-center;
 
     .hero-header-text {
       @apply lg:text-[196px] md:text-[120px] text-[60px] font-gallery uppercase font-light absolute select-none lg:top-[10%] md:top-[10%] top-[10%];
@@ -160,7 +160,7 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[80px] text-[40px] relative z-10 pointer-events-none md:leading-[80px] leading-[40px] tracking-[-1px];
+    @apply flex flex-col justify-center md:text-[80px] text-[45px] relative z-10 pointer-events-none md:leading-[80px] leading-[40px] tracking-[-1px];
     img {
       @apply size-8 md:size-10 object-contain;
     }
