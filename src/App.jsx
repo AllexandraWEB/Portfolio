@@ -10,8 +10,8 @@ const App = () => {
   return (
     <>
       <NavBar />
-      {/* <Hero /> */}
-      <HeroSection />
+      <Hero />
+      {/* <HeroSection /> */}
       {/* <Experience /> */}
       <ShowcaseSection />
       <Footer />

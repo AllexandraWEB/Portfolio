@@ -27,10 +27,10 @@ const HeroSection = () => {
     <section id="hero" className="relative overflow-hidden section">
       <div className="hero-layout">
         <div>
-          <img src="/public/images/hero-lotus.png" alt="Lotus" className="animate-[spin_50s_linear_infinite]" />
+          <img src="/public/images/hero-lotus.png" alt="Lotus" className="animate-[spin_50s_linear_infinite] select-none" />
         </div>
         <div className="hero-header-text padding-x">
-          <h1>Aleksandra</h1>
+          <h1>aleksandra</h1>
         </div>
 
         <div className="hero-arrow">

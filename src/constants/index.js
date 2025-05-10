@@ -1,31 +1,31 @@
 const navLinks = [
-    {
-      name: "Work",
-      link: "#work",
-    },
-    {
-      name: "Experience",
-      link: "#experience",
-    },
-    {
-      name: "Skills",
-      link: "#skills",
-    },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
-    },
-  ];
+  {
+    name: "Projects",
+    link: "/projects",
+  },
+  {
+    name: "Experience",
+    link: "/experience",
+  },
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Résumé",
+    link: "#resume",
+  },
+];
   
   const words = [
     { text: "Ideas", imgPath: "/images/ideas.svg" },
-    { text: "Concepts", imgPath: "/images/concepts.svg" },
+    { text: "Code", imgPath: "/images/ideas.svg" },
     { text: "Designs", imgPath: "/images/designs.svg" },
-    { text: "Code", imgPath: "/images/code.svg" },
+    { text: "Flow", imgPath: "/images/code.svg" },
     { text: "Ideas", imgPath: "/images/ideas.svg" },
-    { text: "Concepts", imgPath: "/images/concepts.svg" },
-    { text: "Designs", imgPath: "/images/designs.svg" },
-    { text: "Code", imgPath: "/images/code.svg" },
+    { text: "Code", imgPath: "/images/ideas.svg" },
+    { text: "Design", imgPath: "/images/designs.svg" },
+    { text: "Flow", imgPath: "/images/code.svg" },
   ];
   
   const logoIconsList = [
@@ -140,39 +140,39 @@ const navLinks = [
   
   const expCards = [
     {
-      review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      review: "During my two years at the University of Plovdiv, I built a strong foundation in programming, web development, and mathematical concepts essential to computer science.",
       imgPath: "/images/exp1.png",
       logoPath: "/images/logo1.png",
       title: "Informatics Student",
       date: "September 2023 - Present",
       responsibilities: [
-        "Developed and maintained user-facing features for the Hostinger website.",
-        "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-        "Optimized web applications for maximum speed and scalability.",
+        "Studied key subjects including Java, web development, databases, linear algebra, and discrete mathematics.",
+        "Developed several Java-based projects, applying object-oriented principles and database integration.",
+        "Strengthened problem-solving skills through mathematical coursework and practical programming tasks.",
       ],
     },
     {
-      review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      review: "Currently studying at Software University (SoftUni), focusing on the JavaScript path to strengthen my front-end development skills.",
       imgPath: "/images/exp2.png",
       logoPath: "/images/logo2.png",
       title: "JavaScript Developer Student",
       date: "May 2023 - Present",
       responsibilities: [
-        "Led the development of Docker's web applications, focusing on scalability.",
-        "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-        "Contributed to open-source projects that were used with the Docker ecosystem.",
+        "Learning core concepts of vanilla JavaScript along with HTML and CSS.",
+        "Actively building a solid foundation in front-end technologies through practical coursework.",
+        "Completed structured training and assessments to earn recognized certifications in key front-end technologies.",
       ],
     },
     {
-      review: "At the Technical University of Varna, I studied C++, logic and automata, and algorithm analysis, which led to building C++ projects and sparked my journey toward becoming a front-end web developer.",
+      review: "During my first year, I gained foundational skills in programming and algorithms that sparked my journey into front-end web development.",
       imgPath: "/images/exp3.png",
       logoPath: "/images/logo3.png",
       title: "Software Engineering Student",
       date: "October 2022 - May 2023",
       responsibilities: [
-        "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-        "Improved app performance and user experience through code optimization and testing.",
-        "Coordinated with the product team to implement features based on feedback.",
+        "Studied core subjects such as C++, logic and automata, and algorithm analysis.",
+        "Built several C++ projects, applying theoretical concepts in practical scenarios.",
+        "Discovered a strong interest in software development, leading to a front-end career path.",
       ],
     },
   ];
