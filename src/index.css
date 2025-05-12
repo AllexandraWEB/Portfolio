@@ -193,7 +193,7 @@ section {
     }
 
     .logo {
-      @apply text-purple-dark text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105 font-poppins uppercase;
+      @apply text-black text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105 font-poppins uppercase;
     }
 
     nav.desktop {
@@ -203,14 +203,14 @@ section {
         @apply flex space-x-8;
 
         li {
-          @apply text-purple-dark relative;
+          @apply text-black relative;
 
           span {
-            @apply transition-colors duration-300 hover:text-purple-mid;
+            @apply transition-colors duration-300;
           }
 
           .underline {
-            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-mid transition-all duration-300 group-hover:w-full;
+            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full;
           }
         }
       }
@@ -424,6 +424,10 @@ section {
 
 .dark-background {
   @apply bg-[#0c0c0c] text-white;
+}
+
+.light-background {
+  @apply bg-white text-black;
 }
 
 /* Hero text slider starts */

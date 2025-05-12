@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { navLinks } from '../constants'
 
 const NavBar = () => {
@@ -18,18 +19,18 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : 'notscrolled'}`}> 
         <div className='inner'>
-            <a href="#hero" className='logo'>
+            <Link to="/" className='logo'>
                 Alexandra
-            </a>
+            </Link>
 
             <nav className='desktop'>
                 <ul>
                     {navLinks.map(( { link, name } ) => (
                         <li key={name} className='group'>
-                            <a href={link}>
+                            <Link to={link}>
                                 <span>{name}</span>
                                 <span className='underline' />
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

@@ -55,14 +55,10 @@ const Experience = () => {
     }, []);
 
   return (
-    <section id='experience' className='w-full section-padding xl:px-0 dark-background rounded-[55px]'>
+    <section id='experience' className='w-full section-only-padding pb-50 xl:px-0 dark-background'>
         <div className='w-full h-full md:px-20 px-5 xl:pt-40 md:pt-25 pt-25 pb-20'>
-            <TitleHeader 
-            title="Current experience" 
-            sub="My Career Overview"
-             />
-            
-            <div className='mt-32 relative'>
+        <h2 className='text-showcase md:mt-15 mt-10'>Current <span className='lowercase italic'>experience</span></h2>
+            <div className='mt-10 relative'>
                 <div className='relative z-50 xl:space-y-32 space-y-10'>
                     {expCards.map((card, index) => (
                         <div key={card.title} className='exp-card-wrapper'>

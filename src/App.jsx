@@ -1,21 +1,33 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 import Hero from './sections/Hero'
 import ShowcaseSection from './sections/ShowcaseSection'
 import NavBar from './components/NavBar'
 import Experience from './sections/Experience'
 import Footer from './sections/Footer'
-import HeroSection from './sections/HeroSection'
+import LightFooter from './sections/LightFooter'
 
 const App = () => {
   return (
-    <>
+    <Router>
       <NavBar />
-      <Hero />
-      {/* <HeroSection /> */}
-      {/* <Experience /> */}
-      <ShowcaseSection />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero />
+            <ShowcaseSection />
+            <Footer />
+          </>
+        } />
+        <Route path="/experience" className="bg-black" element={
+          <>
+          <Experience />
+          <LightFooter />
+          </>
+          } />
+      </Routes>
+    </Router>
   )
 }
 

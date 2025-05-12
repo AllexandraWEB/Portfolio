@@ -1,15 +1,15 @@
 const navLinks = [
   {
-    name: "Projects",
-    link: "/projects",
+    name: "Home",
+    link: "/",
   },
   {
     name: "Experience",
     link: "/experience",
   },
   {
-    name: "About",
-    link: "#about",
+    name: "Projects",
+    link: "#projects",
   },
   {
     name: "Résumé",
@@ -141,7 +141,7 @@ const navLinks = [
   const expCards = [
     {
       review: "During my two years at the University of Plovdiv, I built a strong foundation in programming, web development, and mathematical concepts essential to computer science.",
-      imgPath: "/images/exp1.png",
+      imgPath: "/images/software-university.png",
       logoPath: "/images/logo1.png",
       title: "Informatics Student",
       date: "September 2023 - Present",
@@ -153,7 +153,7 @@ const navLinks = [
     },
     {
       review: "Currently studying at Software University (SoftUni), focusing on the JavaScript path to strengthen my front-end development skills.",
-      imgPath: "/images/exp2.png",
+      imgPath: "/images/software-university.png",
       logoPath: "/images/logo2.png",
       title: "JavaScript Developer Student",
       date: "May 2023 - Present",
