@@ -3,7 +3,7 @@ import ContactButton from "../components/ContactButton";
 
 const LightFooter = () => {
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-[#0c0c0c]">
       <footer className="w-full light-background rounded-t-[55px]">
         <div className="w-full h-full md:px-20 px-5 xl:pt-40 md:pt-25 pt-25 pb-20">
           <div className="flex-col-center footer-text">

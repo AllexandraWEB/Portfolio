@@ -141,8 +141,8 @@ const navLinks = [
   const expCards = [
     {
       review: "During my two years at the University of Plovdiv, I built a strong foundation in programming, web development, and mathematical concepts essential to computer science.",
-      imgPath: "/images/software-university.png",
-      logoPath: "/images/logo1.png",
+      imgPath: "/images/pu.png",
+      logoPath: "/images/logo-pu.png",
       title: "Informatics Student",
       date: "September 2023 - Present",
       responsibilities: [
@@ -154,7 +154,7 @@ const navLinks = [
     {
       review: "Currently studying at Software University (SoftUni), focusing on the JavaScript path to strengthen my front-end development skills.",
       imgPath: "/images/software-university.png",
-      logoPath: "/images/logo2.png",
+      logoPath: "/images/logo-softuni.png",
       title: "JavaScript Developer Student",
       date: "May 2023 - Present",
       responsibilities: [
@@ -165,8 +165,8 @@ const navLinks = [
     },
     {
       review: "During my first year, I gained foundational skills in programming and algorithms that sparked my journey into front-end web development.",
-      imgPath: "/images/exp3.png",
-      logoPath: "/images/logo3.png",
+      imgPath: "/images/tu.png",
+      logoPath: "/images/logo-tu.png",
       title: "Software Engineering Student",
       date: "October 2022 - May 2023",
       responsibilities: [

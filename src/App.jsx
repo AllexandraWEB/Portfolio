@@ -20,7 +20,7 @@ const App = () => {
             <Footer />
           </>
         } />
-        <Route path="/experience" className="bg-black" element={
+        <Route path="/experience" element={
           <>
           <Experience />
           <LightFooter />
