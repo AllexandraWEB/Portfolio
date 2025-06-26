@@ -12,6 +12,7 @@ const Preloader = ({ onFinish }) => {
   const progressChunks = [
     [0, 0],
     [2, 7],
+    [4, 2],
     [6, 5],
     [9, 8],
     [9, 9],
@@ -24,8 +25,8 @@ const Preloader = ({ onFinish }) => {
     const counts = counterRef.current.querySelectorAll(".count");
     const tl = gsap.timeline({ onComplete: animateOut });
 
-    const enterDuration = 0.5;
-    const exitDuration = 0.5;
+    const enterDuration = 0.3;
+    const exitDuration = 0.2;
     const stagger = 0.075;
     const waitTimeAfterEnter = 0.1;
 
@@ -63,22 +64,18 @@ const Preloader = ({ onFinish }) => {
     });
 
     function animateOut() {
-      const tl2 = gsap.timeline();
+      const tl2 = gsap.timeline({
+        onComplete: () => {
+          setHideLoader(true);
+          onFinish();
+        },
+      });
 
-      tl2.fromTo(
-        containerRef.current,
-        { opacity: 1 },
-        {
-          opacity: 0,
-          duration: 0.6,
-          delay: 0.5,
-          ease: "hop",
-          onComplete: () => {
-            setHideLoader(true);
-            onFinish();
-          },
-        }
-      );
+      tl2.to(containerRef.current, {
+        yPercent: -100,
+        duration: 1,
+        ease: "power4.inOut",
+      });
     }
   }, [onFinish]);
 
@@ -87,7 +84,7 @@ const Preloader = ({ onFinish }) => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 bg-black flex items-center justify-center z-50"
+      className="fixed inset-0 bg-[#0c0c0c] flex items-center justify-center z-50"
     >
       <div
         className="counter absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20"
@@ -113,6 +110,9 @@ const Preloader = ({ onFinish }) => {
             ))}
           </div>
         ))}
+      </div>
+      <div className="spinner-container absolute left-1/2 -translate-x-1/2 bottom-1/4">
+        <div className="spinner w-[30px] md:w-[50px] h-[30px] md:h-[50px] border-[2px] border-white border-t-[#404040] rounded-[50%] animate-spin"></div>
       </div>
     </div>
   );
