@@ -8,6 +8,7 @@ import Experience from './sections/Experience'
 import Footer from './sections/Footer'
 import LightFooter from './sections/LightFooter'
 import Preloader from './components/Preloader' 
+import AboutMe from './sections/AboutMe'
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -24,6 +25,7 @@ const App = () => {
               element={
                 <>
                   <Hero />
+                  <AboutMe />
                   <ShowcaseSection />
                   <Footer />
                 </>

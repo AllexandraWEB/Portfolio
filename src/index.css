@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -22,7 +22,7 @@ section {
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;
-  --font-main: "Le Grand Regular", sans-serif; 
+  --font-main: "Le Grand Regular", sans-serif;
   --font-gallery: "Gallery Modern", sans-serif;
   --font-ethereal: "Ethereal", sans-serif;
   --font-poppins: "Poppins", sans-serif;
@@ -42,52 +42,52 @@ section {
 }
 
 @font-face {
-  font-family: 'Bigilla';
-  src: url('/Bigilla.otf') format('opentype');
+  font-family: "Bigilla";
+  src: url("/Bigilla.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gallery Modern';
-  src: url('/GalleryModern.otf') format('opentype');
+  font-family: "Gallery Modern";
+  src: url("/GalleryModern.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ethereal';
-  src: url('/Ethereal-Thin.otf') format('opentype');
+  font-family: "Ethereal";
+  src: url("/Ethereal-Thin.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Allegra de Amour';
-  src: url('/Allegra-de-Amour.otf') format('opentype');
+  font-family: "Allegra de Amour";
+  src: url("/Allegra-de-Amour.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Edensor';
-  src: url('/Edensor.otf') format('opentype');
+  font-family: "Edensor";
+  src: url("/Edensor.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Italiana Regular';
-  src: url('/Italiana-Regular.ttf') format('opentype');
+  font-family: "Italiana Regular";
+  src: url("/Italiana-Regular.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Le Grand Regular';
-  src: url('/Le-Grand-Regular.ttf') format('opentype');
+  font-family: "Le Grand Regular";
+  src: url("/Le-Grand-Regular.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Soage';
-  src: url('/Soage.otf') format('opentype');
+  font-family: "Soage";
+  src: url("/Soage.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -264,7 +264,6 @@ section {
       }
     }
 
-
     .project-list-wrapper {
       @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
 
@@ -307,10 +306,9 @@ section {
       img {
         @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
-
     }
   }
-  
+
   .contact-button {
     @apply px-4 py-4 md:mt-[70px] mt-[50px] flex justify-center items-center m-auto relative cursor-pointer overflow-hidden rounded-4xl bg-[#0c0c0c] border-2 border-white;
   }
@@ -420,6 +418,32 @@ section {
       @apply italic lowercase font-ethereal lg:px-5 md:px-5 px-2;
     }
   }
+
+  .about-me {
+    .about-container {
+      @apply text-start max-w-[1300px] w-full mx-auto;
+    }
+
+    .span {
+      @apply uppercase text-[13px] font-poppins tracking-wide mb-[55px] md:mb-[50px] mt-[100px] md:mt-[10px];
+    }
+
+    .about-header {
+      @apply text-[22px] leading-[40px] md:text-[50px] md:leading-[60px] lg:text-[65px] lg:leading-[75px] font-sans uppercase break-words;
+    }
+
+    .about-italic {
+      @apply italic font-main lowercase inline-flex items-center gap-2;
+    }
+
+    .tailwind {
+      @apply w-[28px] h-[28px] sm:w-[35px] sm:h-[35px] md:w-[45px] md:h-[45px] lg:w-[55px] lg:h-[55px] align-middle;
+    }
+
+    .about-p {
+      @apply mt-[30px] md:mt-[35px] lg:mt-[50px] text-base sm:text-lg md:text-xl max-w-[800px] text-center;
+    }
+  }
 }
 
 .dark-background {
@@ -477,10 +501,10 @@ section {
   background: linear-gradient(
     0deg,
     rgba(69, 222, 196, 0) 0%,
-    #96A0BF 25%,
-    #DF9A9C 37.51%,
-    #E3A78E 62.83%,
-    #E9B87B 92.91%
+    #96a0bf 25%,
+    #df9a9c 37.51%,
+    #e3a78e 62.83%,
+    #e9b87b 92.91%
   );
 }
 

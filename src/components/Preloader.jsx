@@ -12,7 +12,6 @@ const Preloader = ({ onFinish }) => {
   const progressChunks = [
     [0, 0],
     [2, 7],
-    [4, 2],
     [6, 5],
     [9, 8],
     [9, 9],
