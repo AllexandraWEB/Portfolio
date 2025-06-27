@@ -14,6 +14,7 @@ body {
   color: black;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
+  cursor: default;
 }
 
 section {
@@ -160,7 +161,7 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[80px] text-[45px] relative z-10 pointer-events-none md:leading-[80px] leading-[40px] tracking-[-1px];
+    @apply flex flex-col justify-center md:text-[80px] text-[45px] relative z-10 md:leading-[80px] leading-[40px] tracking-[-1px];
     img {
       @apply size-8 md:size-10 object-contain;
     }
@@ -408,7 +409,7 @@ section {
     }
   }
   .footer-text {
-    @apply flex flex-col justify-center text-center font-main m-auto lg:text-[96px] md:text-[70px] text-[48px] uppercase pointer-events-none md:leading-[80px] leading-[45px] md:tracking-[-1px] tracking-[2px];
+    @apply flex flex-col justify-center text-center font-main m-auto lg:text-[96px] md:text-[70px] text-[48px] uppercase md:leading-[80px] leading-[45px] md:tracking-[-1px] tracking-[2px];
 
     .span {
       @apply uppercase text-[13px] font-poppins tracking-wide lg:mb-[50px] md:mb-[50px] mb-[55px] md:mt-[10px] mt-[100px];

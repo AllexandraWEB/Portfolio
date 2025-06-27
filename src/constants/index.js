@@ -13,7 +13,8 @@ const navLinks = [
   },
   {
     name: "Résumé",
-    link: "#resume",
+    link: "/Aleksandra-Tsimentarova-CV.pdf",
+    target: "_blank",
   },
 ];
   

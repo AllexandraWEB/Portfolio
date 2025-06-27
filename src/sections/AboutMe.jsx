@@ -1,4 +1,6 @@
 import React from "react";
+import { gsap } from "gsap";
+import { handleCursorEnter, handleCursorLeave } from "../utils/cursorHandlers";
 
 const AboutMe = () => {
   return (
@@ -6,7 +8,11 @@ const AboutMe = () => {
       <div className="w-full h-full md:px-20 px-5 xl:pt-40 md:pt-25 pt-25 pb-20">
         <div className="flex-col-center about-container">
           <span className="span">About me</span>
-          <h1 className="about-header">
+          <h1 
+          className="about-header"
+          onMouseEnter={handleCursorEnter}
+          onMouseLeave={handleCursorLeave}
+          >
             <span className="about-italic">l explore</span> my interests{" "}
             <span className="about-italic">
               with the
@@ -17,8 +23,15 @@ const AboutMe = () => {
               />
             </span>
           </h1>
-          <h1 className="about-header">same spirit I bring to design:</h1>
-          <h1 className="about-header">
+          <h1 
+          className="about-header"
+          onMouseEnter={handleCursorEnter}
+          onMouseLeave={handleCursorLeave}
+          >same spirit I bring to design:</h1>
+          <h1 
+          className="about-header"
+          onMouseEnter={handleCursorEnter}
+          onMouseLeave={handleCursorLeave}>
             a blend{" "}
             <span className="about-italic">
               of curiosity, minimalism, & joy.

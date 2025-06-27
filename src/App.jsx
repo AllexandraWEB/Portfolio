@@ -9,6 +9,7 @@ import Footer from './sections/Footer'
 import LightFooter from './sections/LightFooter'
 import Preloader from './components/Preloader' 
 import AboutMe from './sections/AboutMe'
+import Cursor from './components/Cursor'
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -18,6 +19,7 @@ const App = () => {
       {!isLoaded && <Preloader onFinish={() => setIsLoaded(true)} />}
       {isLoaded && (
         <Router>
+          <Cursor />
           <NavBar />
           <Routes>
             <Route
