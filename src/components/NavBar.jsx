@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
+import NavButton from "./NavButton";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -43,11 +44,7 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="#content" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        <NavButton />
       </div>
     </header>
   );
