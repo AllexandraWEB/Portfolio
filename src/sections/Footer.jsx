@@ -4,7 +4,9 @@ import { handleCursorEnter, handleCursorLeave } from "../utils/cursorHandlers";
 
 const Footer = () => {
   return (
-    <footer className="w-full dark-background rounded-t-[55px]">
+    <footer 
+    id="contact"
+    className="w-full dark-background rounded-t-[55px]">
       <div className="w-full h-full md:px-20 px-5 xl:pt-40 md:pt-25 pt-25 pb-20">
         <div
           className="flex-col-center footer-text"

@@ -1,10 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
+import gsap from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-const NavButton = () => {
+gsap.registerPlugin(ScrollToPlugin);
+
+const NavButton = ( {className, id } ) => {
+
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    const target = document.getElementById("contact");
+
+    if(target) {
+      const offset = window.innerHeight * 0.1;
+      const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
+
+      gsap.to(window, {
+        duration: 1.2,
+        scrollTo: { y: targetTop, autoKill: true },
+        ease: "power2.inOut",
+      });
+    }
+  }
+
+
   return (
     <StyledWrapper>
-      <a className="fancy" href="#">
+      <a onClick={handleClick} className="fancy" href="#">
         <span className="top-key" />
         <span className="text">Contact me</span>
         <span className="bottom-key-1" />

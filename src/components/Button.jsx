@@ -10,7 +10,7 @@ const Button = ({ text, className, id }) => {
 
     const target = document.getElementById("work");
 
-    if (target) {
+    if(target) {
       const offset = window.innerHeight * 0.1;
       const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
 
