@@ -17,7 +17,7 @@ const LightFooter = () => {
             Let's create <br /> great things
             <span className="italic">together.</span>
           </div>
-          <ContactButton text="Contact me" />
+          <ContactButton text="cimentarowa@gmail.com" />
         </div>
       </footer>
     </div>
