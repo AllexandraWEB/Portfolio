@@ -37,7 +37,7 @@ const AboutMe = () => {
               of curiosity, minimalism, & joy.
             </span>
           </h1>
-          <p className="about-p">Blending technical precision with visual harmony, I'm drawn to elegant code, and to the beauty of thoughtful details and meaningful simplicity</p>
+          <p className="about-p">I'm Alexandra Tsimentarova - Frontend Developer in my third year of my Informatics Degree, while also pursuing a JavaScript Developer qualification at Software University<br /> <br />Blending technical precision with visual harmony, I'm drawn to elegant code, and to the beauty of thoughtful details and meaningful simplicity.</p>
         </div>
       </div>
     </section>

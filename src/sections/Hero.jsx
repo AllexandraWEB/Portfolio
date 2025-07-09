@@ -56,7 +56,7 @@ const Hero = () => {
               <h1 className="italic font-main">experience</h1>
             </div>
             <p className="md:text-xl relative z-10 pointer-events-none">
-              Welcome to my virtual world
+              Welcome! I'm Alexandra Tsimentarova <br className="md:hidden" /> [Frontend Developer]
             </p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"

@@ -4,7 +4,7 @@ import { CustomEase } from "gsap/CustomEase";
 
 const Preloader = ({ onFinish }) => {
   const [hideLoader, setHideLoader] = useState(false);
-  const [showTitle, setShowTitle] = useState(false);
+  // const [showTitle, setShowTitle] = useState(false);
 
   const containerRef = useRef(null);
   const counterRef = useRef(null);
